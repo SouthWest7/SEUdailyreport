@@ -14,8 +14,8 @@ username.clear()
 password.clear()
 username.click()
 #输入
-username.send_keys("213192216")
-password.send_keys("mxn124578")
+username.send_keys("your_username")
+password.send_keys("your_password")
 #点击登录
 driver.find_element_by_xpath("//*[@id=\"casLoginForm\"]/p[5]/button").click()
 time.sleep(10)
