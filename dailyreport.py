@@ -21,9 +21,13 @@ driver.find_element_by_xpath("//*[@id=\"casLoginForm\"]/p[5]/button").click()
 time.sleep(10)
 
 #新增
+driver.find_element_by_link_text("新增").click()
 driver.find_element_by_xpath("/html/body/main/article/section/div[2]/div[1]").click()
 time.sleep(1)
 driver.find_element_by_name("DZ_JSDTCJTW").send_keys("36")
+driver.find_element_by_css_selector('#save').click()
+driver.find_element_by_link_text("确认").click()
+time.sleep(10)
 #driver.find_element_by_xpath("/html/body/div[11]/div[1]/div[1]/div[2]/div[2]/a").click()
 
 driver.quit()
